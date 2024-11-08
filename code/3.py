@@ -10,10 +10,44 @@
 
 
 class Pais:
-    def __init__(self, nome: str, nome_Capital: str, km: float, paises_fronteira: list = []):
+    def __init__(self, nome: str, capital: str, dimensao_km: float, paises_fronteira: list = None):
         self.__nome = nome
-        self.__nome_Capital = nome_Capital
-        self.__km = km
+        self.__capital = capital
+        self.__dimensao_km = dimensao_km
+        self.__paises_fronteira = paises_fronteira if paises_fronteira else []
     
-    def adad():
-        ...
+    def get_nome(self):
+        return self.__nome 
+    
+    def get_capital(self):
+        return self.__capital 
+    
+    def get_dimensao_km(self):
+        return self.__dimensao_km 
+    
+    def get_paises_fronteira(self):
+        return self.__paises_fronteira
+
+    
+    def adicionar_paises_fronteiras(self, novo_paises_fronteira):
+        if novo_paises_fronteira not in self.__paises_fronteira:
+            self.__paises_fronteira.append(novo_paises_fronteira)
+
+    def __str__(self):
+        return (
+        f"Nome do país: {self.get_nome()}"
+        f"Sua Capital: {self.get_capital()}"
+        f"Sua dimensão territorial em KM: {self.get_dimensao_km()}"
+        f"Paises que fazem fronteiras: {self.get_paises_fronteira()}")
+
+pais1 = Pais("Brasil", "Brasilia", 8510000, ["Paraguai","Peru","Suriname","Uruguai","Venezuela"])
+pais1.adicionar_paises_fronteiras("Argentina")
+pais1.adicionar_paises_fronteiras("Uruguai")
+print(pais1)
+
+        
+
+
+    
+
+    
