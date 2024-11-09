@@ -3,7 +3,7 @@ class Data:
         self.__dia = dia
         self.__mes = mes
         self.__ano = ano
-]
+
     def get_dia(self):
         return self.__dia
 
