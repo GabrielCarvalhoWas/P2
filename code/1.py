@@ -1,3 +1,9 @@
+# 1. Implemente uma classe chamada Data, que poderá ser usada para representar uma data. A classe deverá ter:
+# os atributos privados: dia, mês e ano, do tipo int.;
+# Construtor;
+# Métodos acessores e modificadores;
+# Método __str__(self), que deverá retornar a data no formato dd/mm/aaaa (String).
+
 class Data:
     def __init__(self, dia: int, mes: int, ano: int):
         self.__dia = dia
