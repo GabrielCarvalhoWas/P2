@@ -1,32 +1,32 @@
 export const flags = [
   {
     id: 'ad',
-    image: '../imgs/flags/ad.png',
+    image: './imgs/flags/ad.png',
     name: 'Andorra',
   },
   {
     id: 'ae',
-    image: '../imgs/flags/ae.png',
+    image: './imgs/flags/ae.png',
     name: 'United Arab Emirates',
   },
   {
     id: 'af',
-    image: '../imgs/flags/af.png',
+    image: './imgs/flags/af.png',
     name: 'Afghanistan',
   },
   {
     id: 'ag',
-    image: '../imgs/flags/ag.png',
+    image: './imgs/flags/ag.png',
     name: 'Antigua and Barbuda',
   },
   {
     id: 'ai',
-    image: '/imgs/flags/ai.png',
+    image: './imgs/flags/ai.png',
     name: 'Anguilla',
   },
   {
     id: 'al',
-    image: '../imgs/flags/al.png',
+    image: './imgs/flags/al.png',
     name: 'Albania',
   },
   {
