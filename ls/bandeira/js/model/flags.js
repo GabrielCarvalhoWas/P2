@@ -502,4 +502,4 @@ export const flags = [
   },
 ];
 
-export default flags;
+
